@@ -38,7 +38,18 @@ function calculate_largest_integer(integer1, integer2) {
   return result;
 }
 
-//2. Write a JavaScript conditional statement to find the sign of the product of three numbers. 
+//2. Write a JavaScript conditional statement to find the sign of the product of three numbers.
 //Display an alert box with the specified sign.
 //Sample numbers : 3, -7, 2
 //Output : The sign is -
+
+function find_sign(num1, num2, num3) {
+    if (typeof num1 === "number" && typeof num2 === "number" && typeof num3 === "number"){
+  const product = num1 * num2 * num3;
+  return product >= 0 ? 'The sign is +' : 'The sign is -';
+} else {
+    return "kk"
+}
+}
+console.log(find_sign(15, -7, 3));
+console.log(find_sign(15, -7, 'no'));
