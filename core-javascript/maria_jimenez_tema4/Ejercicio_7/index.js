@@ -7,9 +7,12 @@ while (true) {
   const number_2 = parseFloat(prompt('Please, enter the second number'), 10);
 
   const result = number_1 * number_2;
-
+  // comprobar que no hayan metido un número no válido
   if (Number.isNaN(result)) {
     alert('Input a valid number, please');
+    // utilizo continue para volver al inicio del loop,
+    // pero he dudado porque igual sería más legible
+    // utilizar un else para mostrar el otro alert
     continue;
   }
   alert(result);
