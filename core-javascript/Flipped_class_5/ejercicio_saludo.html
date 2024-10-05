@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click para saludar</title>
+</head>
+<body>
+
+<h1>Haz clic en cualquier parte para ver el saludo</h1>
+
+<!-- Un contenedor para mostrar el saludo -->
+<div id="saludo"></div>
+
+<script>
+    // Agregar un listener para detectar clics en la página
+    document.addEventListener("click", function() {
+        // Escribir el saludo en el contenedor con id "saludo"
+        document.getElementById("saludo").innerText = "¡Hola, bienvenido!";
+    });
+</script>
+
+</body>
+</html>
