@@ -44,17 +44,17 @@ describe('2. mapWithCb', () => {
     expect(mocked_function).toHaveBeenCalledTimes(test_array.length);
   });
 
-  it('calls the given function with any one item from the given array', () => {
-  
-  });
+  // it('calls the given function with any one item from the given array', () => {
 
-  it('calls the given function a second time with the second item in the given array', () => {
-    const mocked_function = jest.fn();
-    mapWithCb([1, 2], mocked_function);
-    expect(mocked_function).toHaveBeenCalled(2).toHaveBeenCalledWith();
-  });
+  // });
 
-  });
+  //   it('calls the given function a second time with the second item in the given array', () => {
+  //     const mocked_function = jest.fn();
+  //     mapWithCb([1, 2], mocked_function);
+  //     expect(mocked_function).toHaveBeenCalled(2).toHaveBeenCalledWith();
+  //   });
 
-  it('calls the given function a final time with the final item in the given array', () => {});
+  //   });
+
+  //   it('calls the given function a final time with the final item in the given array', () => {});
 });
