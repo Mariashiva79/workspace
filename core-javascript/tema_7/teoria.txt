@@ -1,0 +1,3 @@
+cuidado con los metodos de los arrays que borran cosas del array o
+que las modifican.
+Clonar primero el array antes de trabajar con él

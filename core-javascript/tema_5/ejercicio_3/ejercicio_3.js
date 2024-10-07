@@ -1,6 +1,7 @@
 // 3. Crea una función que convierta de Farenheit a Celsius, y si quieres que
 // convierta de Celsius a Farenheit, y otra tercera que haga las dos cosas
 // dependiendo el input.
+/* eslint-disable camelcase */
 
 function convert_degrees() {
   let celsius_or_farenheit = prompt(
@@ -33,12 +34,12 @@ function convert_degrees() {
 }
 
 function convert_to_celsius(degrees) {
-  let celsius = (degrees - 32) * (5 / 9);
+  const celsius = (degrees - 32) * (5 / 9);
   document.write(`${degrees}°F are ${celsius}°C`);
 }
 
 function convert_to_farenheit(degreesF) {
-  let farenheit = degreesF * (9 / 5) + 32;
+  const farenheit = degreesF * (9 / 5) + 32;
   document.write(`${degreesF}°C are ${farenheit}°F`);
 }
 
