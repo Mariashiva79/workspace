@@ -2,17 +2,20 @@
 // La sucesión de Fibonacci es una serie de números que empieza por 0 y 1 y
 // cada número es la suma de los dos anteriores.
 // Por ejemplo: fibonacci(6) -> 8 (0, 1, 1, 2, 3, 5, 8)
-
+// este código es el de Rena
+function fibonacci(n) {
+  if (n <= 1) {
+    return n;
+  }
+  return fibonacci(n - 1) + fibonacci(n - 2);
+}
 // Fn = Fn-1 + Fn-2
 /* eslint-disable camelcase */
 
-function calculate_fibonacci(user_number) {
-  if (user_number === 0 || user_number === 1) {
-    -2;
-    return user_number;
-  }
-  return (
-    calculate_fibonacci(user_number - 1) + calculate_fibonacci(user_number - 2)
-  );
-}
-document.write(calculate_fibonacci(6));
+// function calculate_fibonacci(user_number) {
+//   if (user_number === 0 || user_number === 1) {
+//     return user_number;
+//   }
+//   return calculate_fibonacci(user_number - 1) + calculate_fibonacci(user_number - 2);
+// }
+// document.write(calculate_fibonacci(50));
