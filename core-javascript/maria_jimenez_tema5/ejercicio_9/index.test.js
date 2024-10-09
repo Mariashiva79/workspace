@@ -2,7 +2,7 @@ const titulo = require('./index');
 
 describe('cada palabra empieza con letra mayúscula', () => {
   it('prueba con una palabra', () => {
-    expect(titulo('maría')).toBe('María');
+    expect(titulo('maria')).toBe('Maria');
   });
   it('prueba con un string vacío', () => {
     expect(titulo('')).toBe('');

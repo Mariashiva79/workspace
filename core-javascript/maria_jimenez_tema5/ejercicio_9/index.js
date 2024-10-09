@@ -2,6 +2,7 @@
 // convirtiendo la primera letra de cada palabra a mayúscula y las demás letras a
 // minúscula, dejando inalterados los demás caracteres. Precondición: el
 // separador de palabras es el espacio: " "
+/* eslint-disable camelcase */
 
 function titulo(texto) {
   const array_de_palabras = texto.split(' ');

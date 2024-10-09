@@ -1,0 +1,1 @@
+Instancia: metes un "new" de la clase, es hacer una instancia de la clase
