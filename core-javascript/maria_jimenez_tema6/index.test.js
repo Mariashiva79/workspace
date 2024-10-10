@@ -8,24 +8,24 @@ describe('1. fizzBuzz', () => {
     expect(fizzBuzz(33)).toBe('fizz');
   });
 
-  it('check if the number 33 is divisible by 3', () => {
-    expect(fizzBuzz(27)).toBe('fizz');
+  it('check if the number 9 is divisible by 3', () => {
+    expect(fizzBuzz(9)).toBe('fizz');
   });
 
   it('check if the number 55 is divisible by 5', () => {
     expect(fizzBuzz(55)).toBe('buzz');
   });
 
-  it('check if the number 55 is divisible by 5', () => {
-    expect(fizzBuzz(225)).toBe('buzz');
+  it('check if the number 10 is divisible by 5', () => {
+    expect(fizzBuzz(10)).toBe('buzz');
   });
 
   it('check if the number 15 is divisible by both 3 and 5', () => {
     expect(fizzBuzz(15)).toBe('fizzbuzz');
   });
 
-  it('check if the number 15 is divisible by both 3 and 5', () => {
-    expect(fizzBuzz(15)).toBe('fizzbuzz');
+  it('check if the number 225 is divisible by both 3 and 5', () => {
+    expect(fizzBuzz(225)).toBe('fizzbuzz');
   });
 
   it('check if the number 23 is not divisible by 3 and 5', () => {
@@ -35,6 +35,10 @@ describe('1. fizzBuzz', () => {
   // - what should happen if the function is passed a string?
   it('check if the number is 0', () => {
     expect(fizzBuzz(0)).toBe('fizzbuzz');
+  });
+
+  it('check if the number is a string', () => {
+    expect(fizzBuzz('hola')).toBe('Please, enter a valid number');
   });
 });
 
