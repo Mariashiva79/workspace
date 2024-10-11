@@ -40,6 +40,13 @@ describe('1. fizzBuzz', () => {
   it('check if the number is a string', () => {
     expect(fizzBuzz('hola')).toBe('Please, enter a valid number');
   });
+  it('returns "Invalid input" for null', () => {
+    expect(fizzBuzz(null)).toBe('Please, enter a valid number');
+  });
+
+  it('returns "Invalid input" for undefined', () => {
+    expect(fizzBuzz(undefined)).toBe('Please, enter a valid number');
+  });
 });
 
 describe('2. mapWithCb', () => {
@@ -66,16 +73,28 @@ describe('2. mapWithCb', () => {
   });
 
   // it('calls the given function with any one item from the given array', () => {
+  //   const mocked_function = jest.fn();
+  //   const test_array = [1, 2, 3, 4];
 
+  //   mapWithCb(test_array, mocked_function);
+  //   expect(mocked_function).toHaveBeenCalled(test_array[0]);
   // });
 
-  //   it('calls the given function a second time with the second item in the given array', () => {
-  //     const mocked_function = jest.fn();
-  //     mapWithCb([1, 2], mocked_function);
-  //     expect(mocked_function).toHaveBeenCalled(2).toHaveBeenCalledWith();
-  //   });
+  it('calls the given function a second time with the second item in the given array', () => {
+    const mocked_function = jest.fn();
+    const test_array = [1, 2, 3, 4];
 
-  //   });
+    mapWithCb(test_array, mocked_function);
+    expect(mocked_function).toHaveBeenNthCalledWith(2, test_array[1]);
+  });
 
-  //   it('calls the given function a final time with the final item in the given array', () => {});
+  it('calls the given function a final time with the final item in the given array', () => {
+    const mocked_function = jest.fn();
+    const test_array = [1, 2, 3, 4];
+
+    mapWithCb(test_array, mocked_function);
+    expect(mocked_function).toHaveBeenLastCalledWith(
+      test_array[test_array.length - 1],
+    );
+  });
 });

@@ -5,12 +5,14 @@
 /* eslint-disable camelcase */
 
 function titulo(texto) {
+  if (typeof texto !== 'string') {
+    return 'introduzca un texto válido';
+  }
   const array_de_palabras = texto.split(' ');
   const texto_convertido = array_de_palabras.map(
-    (palabra) => palabra.charAt(0).toUpperCase() + palabra.slice(1),
+    (palabra) => palabra.charAt(0).toUpperCase() + palabra.slice(1).toLowerCase(),
   );
   return texto_convertido.join(' ');
 }
-// console.log(titulo('bienvenido a iruña!'));
 
 module.exports = titulo;

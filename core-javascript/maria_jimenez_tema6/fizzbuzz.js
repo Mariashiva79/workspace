@@ -1,7 +1,7 @@
 const fizzBuzz = (number) => {
   let result = '';
 
-  while (!/^-?[0-9]+(\.[0-9]+)?$/.test(number)) {
+  if (!/^-?[0-9]+(\.[0-9]+)?$/.test(number)) {
     return 'Please, enter a valid number';
   }
 

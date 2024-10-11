@@ -1,0 +1,40 @@
+
+#mi_cabecera {
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+#mi_seccion {
+    background-image: url("../images/fondo_madera.jpg");
+    background-size: cover;
+    color: black;
+    padding: 20px 20px 20px 20px;
+    flex-grow: 1;
+}
+.texto_resaltado {
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.contenedor_texto {
+    color: white;
+    background-color: tomato;
+    display: inline-block;
+    align-content: normal;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 3px 3px 3px 3px;
+}
+body {
+
+    border: 1px solid black;
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;    
+    background-color: rgba(116, 242, 133, 0.424);
+}

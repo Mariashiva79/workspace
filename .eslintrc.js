@@ -8,7 +8,9 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  rules: {},
+  rules: {
+    camelcase: 'off',
+  },
   plugins: ['jest'],
   env: {
     'jest/globals': true,
