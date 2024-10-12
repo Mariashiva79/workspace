@@ -2,7 +2,20 @@
 // después el número del cuál se van a obtener múltiplos y devuelva un
 // array con el tamaño puesto de múltiplos de ese número (2, 4 => [4, 8])
 
-/* eslint-disable camelcase */
-const numbers_arr = [1, 3, 4, 6, 7, 8, 9];
-const size_arr = numbers_arr.length;
-document.write(size_arr);
+function array_of_multiples(size_array, choose_number_to_multiples) {
+  if (
+    !Number.isInteger(size_array) ||
+    !Number.isInteger(choose_number_to_multiples) ||
+    size_array < 0
+  ) {
+    throw new Error('Please, enter a valid number');
+  }
+  const new_array = new Array(size_array);
+
+  for (let i = 0; i < new_array.length; i++) {
+    new_array[i] = choose_number_to_multiples * (i + 1);
+  }
+  return new_array;
+}
+
+module.exports = { array_of_multiples };
