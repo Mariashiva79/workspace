@@ -51,6 +51,8 @@ describe('1. fizzBuzz', () => {
 
 describe('2. mapWithCb', () => {
   it('throws an error if first argument is not an array', () => {
+    // toThrow necesita una función flecha para que pueda capturar el error
+    // https://archive.jestjs.io/docs/en/22.x/expect#tothrowerror
     expect(() => mapWithCb('!array', () => {})).toThrow();
   });
 
@@ -72,20 +74,23 @@ describe('2. mapWithCb', () => {
     expect(mocked_function).toHaveBeenCalledTimes(test_array.length);
   });
 
-  // it('calls the given function with any one item from the given array', () => {
-  //   const mocked_function = jest.fn();
-  //   const test_array = [1, 2, 3, 4];
+  // entendiendo que se refiere a pasar el callback por cada item del array
+  it('calls the given function with any one item from the given array', () => {
+    const mocked_function = jest.fn();
+    const test_array = [1, 2, 3, 4];
 
-  //   mapWithCb(test_array, mocked_function);
-  //   expect(mocked_function).toHaveBeenCalled(test_array[0]);
-  // });
+    mapWithCb(test_array, mocked_function);
+    for (let i = 0; i < test_array.length; i++) {
+      expect(mocked_function).toHaveBeenCalledWith(test_array[i]);
+    }
+  });
 
   it('calls the given function a second time with the second item in the given array', () => {
     const mocked_function = jest.fn();
     const test_array = [1, 2, 3, 4];
 
     mapWithCb(test_array, mocked_function);
-    expect(mocked_function).toHaveBeenNthCalledWith(2, test_array[1]);
+    expect(mocked_function).nthCalledWith(2, test_array[1]);
   });
 
   it('calls the given function a final time with the final item in the given array', () => {

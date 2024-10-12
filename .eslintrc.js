@@ -10,6 +10,7 @@ module.exports = {
   },
   rules: {
     camelcase: 'off',
+    'no-plusplus': 'off',
   },
   plugins: ['jest'],
   env: {
