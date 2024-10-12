@@ -1,7 +1,7 @@
 // import nock from 'nock';
 
-const fizzBuzz = require('./fizzbuzz');
-const mapWithCb = require('./mapWithCb');
+const { fizzBuzz } = require('./index');
+const { mapWithCb } = require('./index');
 
 describe('1. fizzBuzz', () => {
   it('check if the number 33 is divisible by 3', () => {

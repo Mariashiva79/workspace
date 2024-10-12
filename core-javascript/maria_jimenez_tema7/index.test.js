@@ -1,4 +1,4 @@
-const { array_of_multiples } = require('./ejercicio_7');
+const { array_of_multiples } = require('./index');
 
 describe('ejercicio_7 arrays', () => {
   it('check if the numbers are 5 and 3', () => {
@@ -36,4 +36,3 @@ describe('ejercicio_7 arrays', () => {
     expect(() => array_of_multiples(-3, 6)).toThrow();
   });
 });
-
