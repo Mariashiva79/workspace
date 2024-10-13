@@ -9,7 +9,6 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    camelcase: 'off',
     'no-plusplus': 'off',
   },
   plugins: ['jest'],
