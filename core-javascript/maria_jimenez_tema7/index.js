@@ -19,3 +19,5 @@ function array_of_multiples(size_array, choose_number_to_multiples) {
 }
 
 module.exports = { array_of_multiples };
+
+// Mockear función para no llamar al input
