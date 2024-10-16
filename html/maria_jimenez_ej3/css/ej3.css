@@ -4,16 +4,37 @@
     width: 100%;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    padding: 20px;
     text-align: center;
+    justify-content: normal;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+
 }
 
 #mi_seccion {
+    width: 100%;
     background-image: url("../images/fondo_madera.jpg");
     background-size: cover;
     color: black;
-    padding: 20px 20px 20px 20px;
-    flex-grow: 1;
+    flex-grow: 1;  
+    img {
+        display: block;
+        width: 40%;
+        margin: auto;
+      }
+}
+
+#mi_footer {
+    width: 100%;
+    background-color: white;
+    color: black;
+    flex-grow: 1;  
+}
+.imagen_pizza {
+    border-radius: 100px 100px 100px 100px;
+    width : 70% ; 
+    height : 70% ;
 }
 .texto_resaltado {
     font-weight: bold;
@@ -28,9 +49,9 @@
     border: 2px solid rgb(255, 255, 255);
     padding: 3px 3px 3px 3px;
 }
+
 body {
 
-    border: 1px solid black;
     display: flex;
     justify-content: normal;
     align-items: center;
