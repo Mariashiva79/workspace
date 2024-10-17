@@ -22,7 +22,7 @@ function array_of_multiples() {
   return new_array;
 }
 
-//array_of_multiples(user_size_array,user_number_to_multiples)
+// array_of_multiples(user_size_array,user_number_to_multiples)
 
 module.exports = {
   array_of_multiples,

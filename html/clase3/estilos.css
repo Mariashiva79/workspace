@@ -1,0 +1,27 @@
+ol {
+    list-style-type: "😉";
+   }
+
+ul {
+    list-style-type: lower-roman;
+  }
+  ol>li:nth-child(even) {
+    background-color: grey;
+}
+    /* pseudo-elemento marker */
+    ul>li::marker {
+        content: '✝ ';
+        font-size: 1.1em;
+    }
+
+    ul>li:last-child::marker {
+        content: '✔️ ';
+        font-size: 1.5em;
+    }
+    Table, td, th {
+        border: black 1px solid;
+       }
+       
+iframe {
+    border: 2px solid black;
+}

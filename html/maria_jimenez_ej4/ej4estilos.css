@@ -1,0 +1,19 @@
+ol>li:nth-child(even) {
+    background-color: grey;
+}
+div {
+    border-style: dotted;
+    border-width: 1px;
+    border-color: 660033;
+}
+
+  ul>li::marker {
+    content: '☠️ ';
+    font-size: 1.1em;
+}
+
+ul>li:last-child::marker {
+    content: '✔️ ';
+    color: green;
+    font-size: 1em;
+}

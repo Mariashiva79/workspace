@@ -1,3 +1,6 @@
 cuidado con los metodos de los arrays que borran cosas del array o
 que las modifican.
 Clonar primero el array antes de trabajar con él
+separar funciones que reciban datos y funciones que ejecuten datos
+no definir una función dentro de otra (pocas veces es necesario)
+funcion A recoge input (mockear esta función)
