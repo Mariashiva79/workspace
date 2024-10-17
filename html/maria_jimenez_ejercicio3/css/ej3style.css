@@ -1,0 +1,52 @@
+#cabecera {
+    width: 100%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: normal;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+section>nav{
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    background-color: tomato;
+    width: 60px;
+    border: solid white 2px;
+}
+.texto_principal {
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+#bloque_titulo_receta {
+    display: flex;
+    background-image: url("../images/pizza.jpg");
+    background-size: cover;
+    padding-bottom: 50px ;
+    color: rgb(255, 255, 255);
+    text-align: normal;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#bloque_titulo_receta::before {
+    content: "La mejor receta!";
+    color: white;
+    border: solid hsla(86, 93%, 33%, 0.819) 0.1rem;
+    padding: 1em;
+}
+    body {
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url("../images/fondo_madera.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

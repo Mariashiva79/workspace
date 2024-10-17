@@ -1,6 +1,5 @@
-
 a[href*="example"] {
-    color : red;
+    color : tomato;
   }
 
 a[href^="#"]{

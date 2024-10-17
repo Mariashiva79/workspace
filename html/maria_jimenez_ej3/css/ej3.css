@@ -1,7 +1,8 @@
 
+
 #mi_cabecera {
     display: flex;
-    width: 100%;
+    width: 80%;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     text-align: center;
@@ -9,33 +10,23 @@
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
-
 }
 
 #mi_seccion {
-    width: 100%;
-    background-image: url("../images/fondo_madera.jpg");
+    width: 80%;
+    background-image: url("../images/pizza.jpg");
     background-size: cover;
-    color: black;
+    color: rgb(255, 255, 255);
     flex-grow: 1;  
-    img {
-        display: block;
-        width: 40%;
-        margin: auto;
-      }
-}
+    }
 
 #mi_footer {
-    width: 100%;
+    width: 80%;
     background-color: white;
     color: black;
     flex-grow: 1;  
 }
-.imagen_pizza {
-    border-radius: 100px 100px 100px 100px;
-    width : 70% ; 
-    height : 70% ;
-}
+
 .texto_resaltado {
     font-weight: bold;
     margin-left: 50px;
@@ -51,11 +42,11 @@
 }
 
 body {
-
     display: flex;
     justify-content: normal;
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;    
-    background-color: rgba(116, 242, 133, 0.424);
+    background-image: url("../images/fondo_madera.jpg");
+    background-size: cover;
 }
