@@ -11,6 +11,9 @@
 class Transformaciones_string {
   constructor(string) {
     this.string = string;
+    if (typeof string !== 'string') {
+      throw new Error('The input must be a string');
+    }
   }
 
   stringToArray() {
@@ -20,7 +23,6 @@ class Transformaciones_string {
   randomSort() {
     return this.string.split('').sort(() => Math.random() - 0.5);
   }
-
   reverseString() {
     return this.string.split('').reverse();
   }
@@ -30,7 +32,7 @@ class Transformaciones_string {
   }
 
   removeConsonants() {
-    return this.string.replace(/[bcdfghjklmnpqrstvwxyz]/gi, '');
+    return this.string.replace(/[bcdfghjklmnñpqrstvwxyz]/gi, '');
   }
 
   stringToWords() {
