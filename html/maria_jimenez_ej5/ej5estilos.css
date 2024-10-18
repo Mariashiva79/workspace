@@ -1,0 +1,10 @@
+caption {
+    text-align: justify;
+}
+Table, td, th {
+    border: black 1px solid;
+    text-align: center;
+   }
+td, th {
+    padding: 1px 5px 1px 5px;
+   }

@@ -14,6 +14,7 @@ div {
 
 ul>li:last-child::marker {
     content: '✔️ ';
-    color: green;
+    color: transparent; 
+    text-shadow: 0 0 0 rgb(119, 216, 70);  
     font-size: 1em;
 }
