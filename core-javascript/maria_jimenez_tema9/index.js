@@ -8,15 +8,20 @@
 // you can use isistance() to check whether an object is of a particular
 // type.) If the str does not consist of exactly two words, the function
 // should raise a ValueError.
+class ValueError extends Error {
+  constructor(message) {
+    super(message);
+    this.name = 'ValueError';
+  }
+}
 
 function capitalize_last_name(full_name) {
   if (typeof full_name !== 'string') {
-    throw new TypeError('Argument must be a string');
+    throw new TypeError('Full name must be a string');
   }
-
   let words_array = full_name.split(' ');
   if (words_array.length !== 2) {
-    throw new Error('String must contain exactly two words');
+    throw new ValueError('String must contain exactly two words');
   }
   // console.log(words_array);
 
@@ -34,4 +39,4 @@ function capitalize_last_name(full_name) {
   return final_string;
 }
 
-module.exports = { capitalize_last_name };
+module.exports = { capitalize_last_name, ValueError };

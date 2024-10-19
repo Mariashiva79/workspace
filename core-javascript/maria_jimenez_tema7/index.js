@@ -4,9 +4,7 @@
 
 const prompt = require('prompt-sync')();
 
-function array_of_multiples() {
-  const size_array = parseFloat(prompt('What is the size of the array?'));
-  const number_to_multiples = parseFloat(prompt('number to multiples?'));
+function array_of_multiples(size_array, number_to_multiples) {
   if (
     !Number.isInteger(size_array) ||
     !Number.isInteger(number_to_multiples) ||
@@ -22,7 +20,10 @@ function array_of_multiples() {
   return new_array;
 }
 
-// array_of_multiples(user_size_array,user_number_to_multiples)
+const user_size_array = parseFloat(prompt('What is the size of the array? '));
+const user_number_to_multiples = parseFloat(prompt('number to multiples? '));
+
+console.log(array_of_multiples(user_size_array, user_number_to_multiples));
 
 module.exports = {
   array_of_multiples,

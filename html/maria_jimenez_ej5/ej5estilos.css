@@ -1,10 +1,69 @@
 caption {
     text-align: justify;
 }
-Table, td, th {
+table, td, th {
     border: black 1px solid;
     text-align: center;
    }
 td, th {
     padding: 1px 5px 1px 5px;
+    } 
+
+th {
+    background-color: #f8dda1;
+    font-size: large;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif 
+    }
+
+.bg_green {
+    background-color: #b9f941;
    }
+
+#fila_2 :nth-child(2) {
+    background-color: rgb(255, 25, 25);
+    font-size: large;
+}
+
+#fila_2 :not(:first-child ):not(:nth-child(2)) {
+    background-color: rgb(234, 188, 209);
+    font-size: large;
+}
+
+#fila_3 :nth-child(5) {
+    background-color: rgb(156, 205, 234);
+    font-size: small;
+}
+
+#fila_4 :nth-child(5) {
+    background-color: rgb(156, 205, 234);
+    font-size: small;
+}
+#fila_5 :not(:first-child) {
+    background-color: yellow;
+    color: rgb(103, 148, 151) ;
+}
+
+#fila_6 :nth-child(2) {
+    background-color: rgb(156, 205, 234);
+    font-size: small;
+}
+
+#fila_6 :nth-child(6){
+    background-color: rgb(255, 25, 25);
+    font-size: large;
+}
+
+#fila_7 :nth-child(4) {
+    background-color: rgb(156, 205, 234);
+    font-size: small;
+}
+
+#fila_8 :nth-child(6) {
+    background-color: rgb(255, 25, 25);
+    font-size: large;
+}
+
+#fila_8 :nth-child(3) {
+    background-color: rgb(156, 205, 234);
+    font-size: small;
+}
