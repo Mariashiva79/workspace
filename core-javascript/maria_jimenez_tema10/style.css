@@ -1,0 +1,25 @@
+body {  
+    display: flex;
+    align-items: center;
+    background-image:  url('https://images.unsplash.com/photo-1517849845537-4d257902454a');
+    background-size: cover;
+    background-position: center;  
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 400px;
+    padding: 80px;
+    border: 1px solid #040404;
+    border-radius: 50%;
+    background-color: #903992;
+}
+.chronometer {
+    display: flex;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #f5f5f5;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 50px;
+}
