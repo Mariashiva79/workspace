@@ -8,11 +8,21 @@
 // ¿Cuántos hay? ¿Podrías listar los títulos? ¿Y hacer una tabla con los
 // títulos y los contenidos?
 
-let response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
-let text = await response.text();
-console.log(text);
-if (response.ok) { 
-    let json = await response.text();
-  } else {
-    console.log("Error-HTTP: " + response.status);
-  }
+// Notes:
+// 1. Loguear estatus de la petición
+// 2. Imprimir por pantalla contenido del artículo
+
+fetch('https://jsonplaceholder.typicode.com/posts/1');
+  .then( response => response.txt())
+  .then(status => console.log(status))
+
+
+// let response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+// let text = await response.text();
+// console.log(text);
+
+// if (response.ok) { 
+//     let json = await response.text();
+//   } else {
+//    document.write("Error-HTTP: " + response.status);
+//   }
