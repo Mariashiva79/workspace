@@ -2,39 +2,46 @@
  * @jest-environment jsdom
  */
 
-const { start_stop, update_time } = require('./index');
+let { start_stop, seconds, minutes, intervalId } = require('./index');
 
-const fs = require('fs'); // con esto por fin lee el html!!!
-window.document.body.innerHTML = fs.readFileSync('./index.html');
-
-describe('test update_time', () => {
-  // it('should return 0:0 after 60 minutes', () => {
-  //   let minutes = 0;
-  //   let seconds = 0;
-
-  //   start_stop();
-  //   jest.useFakeTimers();
-  //   jest.advanceTimersByTime(5000000);
-  //   expect(minutes).toBe(0);
-  //   expect(seconds).toBe(0);
-  // });
-  test('click stops and restarts the timer', () => {
-    let minutes = 0;
-    let seconds = 0;
-    let intervalId = null;
+describe('Chronometer Tests', () => {
+  beforeEach(() => {
     jest.useFakeTimers();
+    document.body.innerHTML = '<div id="chronometer">00:00</div>';
+  });
+
+  afterEach(() => {
+    jest.clearAllTimers();
+  });
+
+  it('click event starts and stops the timer', () => {
+    document.dispatchEvent(new Event('click'));
+    jest.advanceTimersByTime(5000);
+    expect(document.getElementById('chronometer').innerHTML).toBe('00:05');
+    document.dispatchEvent(new Event('click'));
+    jest.advanceTimersByTime(5000);
+    expect(document.getElementById('chronometer').innerHTML).toBe('00:05');
+    document.dispatchEvent(new Event('click'));
+    jest.advanceTimersByTime(5000);
+    expect(document.getElementById('chronometer').innerHTML).toBe('00:10');
+  });
+
+  it('start_stop starts and stops the timer correctly', () => {
+    
     start_stop();
     jest.advanceTimersByTime(5000);
-    expect(seconds).toBe(5);
-    document.dispatchEvent(new Event('click'));
-    expect(intervalId).toBe(null);
+    expect(document.getElementById('chronometer').innerHTML).toBe('00:05');
+    start_stop();
     jest.advanceTimersByTime(5000);
-    expect(seconds).toBe(5);
-    document.dispatchEvent(new Event('click'));
+    expect(document.getElementById('chronometer').innerHTML).toBe('00:05');
+    start_stop();
     jest.advanceTimersByTime(5000);
-    expect(seconds).toBe(10);
-    jest.runAllTimers();
-    expect(seconds).toBe(0);
-    expect(minutes).toBe(0);
+    expect(document.getElementById('chronometer').innerHTML).toBe('00:15');
+  });
+
+  it('timer resets after 60 minutes', () => {
+    start_stop();
+    jest.advanceTimersByTime(3600000);
+    expect(document.getElementById('chronometer').innerHTML).toBe('00:00');
   });
 });

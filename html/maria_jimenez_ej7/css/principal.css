@@ -1,0 +1,18 @@
+body  {
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(10, 169, 255);
+}
+h1 {
+    color: white;
+    font-size: 2em;
+    margin: 20px 20px 20px 20px;
+}
+iframe {
+    
+    margin: 10px 10px 10px 10px;
+    border: 1px solid black;
+}

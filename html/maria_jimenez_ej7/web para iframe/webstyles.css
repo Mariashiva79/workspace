@@ -1,0 +1,121 @@
+body {
+    background-color: rgb(131, 250, 88);
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+img {
+    width: 70%;
+    height: auto;
+    display: block;
+}
+caption {
+    text-align: justify;
+}
+table, td, th {
+    border: black 1px solid;
+    text-align: center;
+   }
+td, th {
+    padding: 1px 5px 1px 5px;
+    } 
+
+th {
+    background-color: #f8dda1;
+    font-size: large;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif 
+    }
+
+.bg_green {
+    background-color: #b9f941;
+   }
+
+#fila_2 :nth-child(2) {
+    background-color: rgb(255, 25, 25);
+    font-size: large;
+}
+
+#fila_2 :not(:first-child ):not(:nth-child(2)) {
+    background-color: rgb(234, 188, 209);
+    font-size: large;
+}
+
+#fila_3 :nth-child(5) {
+    background-color: rgb(156, 205, 234);
+    font-size: small;
+}
+
+#fila_4 :nth-child(5) {
+    background-color: rgb(156, 205, 234);
+    font-size: small;
+}
+#fila_5 :not(:first-child) {
+    background-color: yellow;
+    color: rgb(103, 148, 151) ;
+}
+
+#fila_6 :nth-child(2) {
+    background-color: rgb(156, 205, 234);
+    font-size: small;
+}
+
+#fila_6 :nth-child(6){
+    background-color: rgb(255, 25, 25);
+    font-size: large;
+}
+
+#fila_7 :nth-child(4) {
+    background-color: rgb(156, 205, 234);
+    font-size: small;
+}
+
+#fila_8 :nth-child(6) {
+    background-color: rgb(255, 25, 25);
+    font-size: large;
+}
+
+#fila_8 :nth-child(3) {
+    background-color: rgb(156, 205, 234);
+    font-size: small;
+}
+#tablas {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+}
+#listas {
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+ol>li:nth-child(even) {
+    background-color: grey;
+}
+div {
+    border-style: dotted;
+    border-width: 1px;
+    border-color: 660033;
+}
+
+  ul>li::marker {
+    content: '☠️ ';
+    font-size: 1.1em;
+}
+
+ul>li:last-child::marker {
+    content: '✔️ ';
+    color: transparent; 
+    text-shadow: 0 0 0 rgb(119, 216, 70);  
+    font-size: 1em;
+}
