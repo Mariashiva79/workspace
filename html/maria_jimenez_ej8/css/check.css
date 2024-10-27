@@ -1,0 +1,15 @@
+@font-face {
+   font-family: orange_juice;
+   src: url('./orange juice 2.0.ttf');
+}
+body {
+       background-image: url(../images/pelicula-mi-villano-favorito-2_1600x1200_xtrafondos.com.jpg);
+        background-size: cover;
+       text-align: center;
+    }
+h1 {
+       font-family: orange_juice;
+       font-size: 80px;
+       color: #efca0d;
+       align-items: center;
+    }

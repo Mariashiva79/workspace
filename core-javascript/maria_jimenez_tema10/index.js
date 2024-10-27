@@ -9,8 +9,6 @@ let minutes = 0;
 let intervalId = null;
 
 function start_stop() {
-  console.log('@@@@@@', seconds, minutes);
-
   if (!intervalId) {
     intervalId = setInterval(() => {
       seconds++;
@@ -19,14 +17,12 @@ function start_stop() {
         minutes++;
       }
       if (minutes === 60) {
+        seconds = 0;
         minutes = 0;
-      }
-      if (minutes === 60) {
         clearInterval(intervalId);
+        intervalId = null;
       }
-      document.getElementById('chronometer').innerHTML = `${minutes
-        .toString()
-        .padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+      document.getElementById('chronometer').innerHTML = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
     }, 1000);
   } else {
     clearInterval(intervalId);
@@ -38,4 +34,4 @@ document.addEventListener('click', () => {
   start_stop();
 });
 
-module.exports = { start_stop, seconds, minutes, intervalId };
+module.exports = { start_stop };
