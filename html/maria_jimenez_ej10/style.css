@@ -11,8 +11,6 @@ img {
     border-radius: 50%;
     border: 2px solid rgb(214, 217, 0);
 }
-td {
-}
 
 .contrast {
     filter: contrast(200%);

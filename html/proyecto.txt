@@ -1,0 +1,14 @@
+usar transiciones documentación clase 5 buscar ejemplo de transiciones
+codepen.io
+cuadrado grande a pequeño al encoger se sale el ratón y ya no sigue encogiendo
+aplicarlo a etiquetas tipo div para evitar esto
+primero maquetar, hacer estructura y por último decorar
+meter animaciones que le gustan mucho
+Primero dibujar lo que se me ocurra (menú, fotos, listas... etc.)
+LO ÚLTIMO ANIMACIONES Y TRANSICIONES
+Poner en la memoria de donde sacamos los recursos (técnicas, animaciones, etc. las imagenes
+o iconos no hace falta), mencionar autorias
+poner comentarios
+entrega 11 de noviembre
+NO PONER IMPORTANT!!
+Buscar ejemplos de "mapa del sitio"
