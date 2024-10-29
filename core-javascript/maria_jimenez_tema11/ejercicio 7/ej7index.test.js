@@ -8,9 +8,12 @@ const { fetch_article } = require('./ej7index');
 describe('fetch_article', () => {
   beforeEach(() => {
     document.body.innerHTML = '';
+    jest.resetAllMocks();
   });
 
   it('should update document.body.innerHTML on successful fetch', async () => {
+    console.log = jest.fn();
+    // Ya he testeado que el fetch responde correctamente en el ejercicio anterior, ahora lo mockeo
     global.fetch = jest.fn(() => {
       return Promise.resolve({
         status: 200,
@@ -20,6 +23,8 @@ describe('fetch_article', () => {
     });
     await fetch_article();
 
+    expect(console.log).toHaveBeenCalledWith('Status 200');
+    expect(fetch).toHaveBeenCalledTimes(1);
     expect(document.body.innerHTML).toContain(
       '<strong>Number of article:</strong> 5 <br> <br> <strong>Title of article:</strong> Test <br> <br> <strong>Article:</strong> <br> <br>Test'
     );

@@ -19,7 +19,7 @@ async function fetch_single_article() {
     const json = await response.json();
     document.body.innerHTML = `<h5><strong>Título: </strong></h5>${json.title} <br> <br> <h5><strong>Artículo: </strong></h5>${json.body}`;
   } else {
-    console.error('Error ' + response.status);
+    console.log('Error ' + response.status);
   }
 }
 

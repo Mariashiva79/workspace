@@ -7,17 +7,63 @@
     <title>Ej8 Forms</title>
 </head>
 <body>
-    <form action="check.html" method="post">
-      <h1>Sign in</h1>
+  <img src="./images/pngegg.png" align="right">
+  <form id="form_1" action="check.html" method="post">
+    <h2> About Minions </h2>
+<div>
+  <h3>Test about fun: </h3>
+<input type="range" id="funny" name="funny" min="0" max="10" />
+<label for="funny"> <strong>Fun range</strong><br> 🥱 -------------------- 😄 </label>
+</div>
+  <h3>Choose your favorite Minion: </h3>
+<input type="radio" id="minion1" name="drone" value="kevin" checked />
+<label for="kevin">Kevin</label>
+</div>
+
+<div>
+<input type="radio" id="minion2" name="drone" value="stuart" />
+<label for="stuart">Stuart</label>
+</div>
+
+<div>
+<input type="radio" id="minion3" name="drone" value="Bob" />
+<label for="Bob">Bob</label>
+<div>
+  <h3>Choose the minions color:</h3>
+  <div>
+    <input type="color" id="angry" name="angry" value="#e66465" />
+    <label for="angry">Angry</label>
+  </div>
+  <div>
+    <input type="color" id="normal" name="normal" value="#f6b73c" />
+    <label for="normal">Normal</label>
+  </div>
+</div>
+<div>
+  <h2>About you</h2>
+  <label for="start"> Your birthdate: </label>
+<input type="date" id="start" name="trip-start" value="Enter here" min="1930-01-01" max="2024-12-31" />
+<br>
+<br>
+<label for="phone">
+  Enter your phone number:<br>
+  <small>Format: 123-456-7890</small>
+</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+</div>
+</form>
+    <form id="form_2" action="check.html" method="post">
+      <h1> Sign in </h1>
     <div>
-        <label for="username">Username (@example.com):</label>
+        <label for="username"> <strong> Username </strong>(@example.com):</label>
         <input type="email" id="email" pattern=".+@example\.com" size="30" required>
-      </div>
-      <div>
-        <label for="pass">Password (5 characters min):</label>
+        <br>
+        <label for="pass"><strong>Password </strong> (5 characters min):</label>
         <input type="password" id="pass" name="password" minlength="5" required>
-      </div> 
-      <input type="submit" value="Sign in">
-    </form>      
+    </div>
+    <div> 
+        <input class="sign_in" type="submit" value="Sign in">
+    </div>
+    </form>     
 </body>
 </html>

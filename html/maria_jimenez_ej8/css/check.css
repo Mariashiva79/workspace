@@ -5,6 +5,7 @@
 body {
        background-image: url(../images/pelicula-mi-villano-favorito-2_1600x1200_xtrafondos.com.jpg);
         background-size: cover;
+        background-repeat: no-repeat;
        text-align: center;
     }
 h1 {
