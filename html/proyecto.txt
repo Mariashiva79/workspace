@@ -12,3 +12,30 @@ poner comentarios
 entrega 11 de noviembre
 NO PONER IMPORTANT!!
 Buscar ejemplos de "mapa del sitio"
+Posicionamiento relativo para poner los bloques en el lugar que quiera
+Posicionamiento absoluto para que ocupe todo ponerle el width 100%
+imagen que no se pueda descargar, hacer un div transparente en Posicionamiento absoluto y así es 
+como evitas que puedan pinchar en la imagen
+cuando usemos absoluto:
+ position: absolute;
+    width: 80%; IMPORTANTE
+    background: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); IMPORTANTE
+
+Z-INDEX para cambiar las capas de orden (mala práctica, no usar)
+Posicionamiento es sobre la pantalla entera o sobre el contenedor que contiene el contenido
+fixed: fija el absoluto (para quitar anuncios quitar de devtools la posición absoluta)
+al estirar la pantalla no desaparezcan contenidos, se adapte al tamaño de pantalla
+en vez de tablas usar flexbox y css grid
+Iker hace toda la página con Grid y luego va modificando
+@media para poner dispositivos diferentes
+
+comentarios para poner en el css
+primero diseño
+aquí viene el módulo 1
+aquí viene el formulario
+
+hojas de estilo, no hace falta una para cada página (1 hoja de estilo y 4 htmls por ejemplo)
+usar lo de child
