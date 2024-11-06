@@ -1,0 +1,75 @@
+
+@font-face {
+    font-family: "MsMadi";
+    src: url("../font/MsMadi-Regular.ttf");
+  }
+  
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "menu content sidebar"
+      "footer footer footer";
+    grid-gap: 10px;
+  }
+  .item1 {
+    grid-area: header;
+    color: rgb(117, 73, 32);
+    font-family: "MsMadi", sans-serif;
+    font-size: calc(1em + 1vw);
+    text-align: center;
+    margin: 0;
+    background: -webkit-linear-gradient(to right, hsla(46, 53%, 58%, 0.434), rgba(255, 255, 255, 0.639)), url(../images/osito\ y\ materiales.png); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, hsla(46, 53%, 58%, 0.434), hwb(0 100% 0% / 0.639)), url(../images/osito\ y\ materiales.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: calc(0.5 + 0.5);
+}
+.item1 h1 {
+  margin: 0;
+  padding: 10px;
+  font-weight: 200;
+  color: #7e5a2b;
+  text-shadow: 2px 2px 2px #f7df94;
+}
+.item1 a {
+  color: #a3702d;
+  text-decoration: none;
+  font-family: "MsMadi";
+  font-size: 20px;
+  margin: 0 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-image: none;
+  transition: all 0.3s;
+} 
+
+nav {
+  text-align: right;
+}
+nav a:hover {
+  background-color: #a3702d;
+  color: #FFEFBA;
+}
+  .item2 {
+    grid-area: menu;
+    height: 1000px;
+  }
+  .item3 {
+    grid-area: content;
+    height: 1000px;
+  }
+  .item4 {
+    grid-area: sidebar;
+    height: 1000px;
+  }
+  .item5 {
+    grid-area: footer;
+    height: 50px;
+  }
+  .item {
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
