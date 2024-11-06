@@ -1,7 +1,7 @@
 // localStorage.setItem('frutaFav', 'manzana');
 // localStorage.getItem('frutaFav');
-// // localStorage.removeItem('frutaFav');
-// // localStorage.clear();
+// localStorage.removeItem('frutaFav');
+// localStorage.clear();
 // sessionStorage.setItem('animalFav', 'pera');
 // sessionStorage.getItem('animalFav');
 // navigator.getBattery().then((bat)=>{console.log(bat)})
