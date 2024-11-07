@@ -3,24 +3,91 @@
     font-family: "MsMadi";
     src: url("../font/MsMadi-Regular.ttf");
   }
+
+header {
+  border: 1px solid rgb(94, 79, 39);
+  padding: 20px;
+  width: 90%;
+  margin: auto
+}
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+
+  /* flexbox */
+  /* display: flex;
+  gap: 20px; */
+  /* Grid */
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+.contenedor-portfolio {
+  /* Grid */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+ /* flexbox */
+  /* width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; */
+}
+
+.foto {
+  border-radius: 10px;
+  min-height: 200px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  /* flexbox
+  width: calc(33.33% - 20px); */
+}
+
+
+.contenedor-texto {
+  font-family: "MsMadi", sans-serif;
+  font-size: 1.5em;
+  color: #000000;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  /* Grib */
+  /* display: grid;
+  grid-template-rows: auto auto; */
+  /* flexbox */
+  display: flex;
+  flex-direction: column;
   
-.grid-container {
+}
+
+
+/* .grid-container {
     display: grid;
     grid-template-areas:
       "header header header"
       "menu content sidebar"
       "footer footer footer";
     grid-gap: 10px;
-  }
-  .item1 {
+  } */
+  /* .item1 {
     grid-area: header;
     color: rgb(117, 73, 32);
     font-family: "MsMadi", sans-serif;
     font-size: calc(1em + 1vw);
     text-align: center;
-    margin: 0;
-    background: -webkit-linear-gradient(to right, hsla(46, 53%, 58%, 0.434), rgba(255, 255, 255, 0.639)), url(../images/osito\ y\ materiales.png); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, hsla(46, 53%, 58%, 0.434), hwb(0 100% 0% / 0.639)), url(../images/osito\ y\ materiales.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0; */
+    /* background: -webkit-linear-gradient(to right, hsla(46, 53%, 58%, 0.434), rgba(255, 255, 255, 0.639)), url(../images/osito\ y\ materiales.png); Chrome 10-25, Safari 5.1-6
+  background: linear-gradient(to right, hsla(46, 53%, 58%, 0.434), hwb(0 100% 0% / 0.639)), url(../images/osito\ y\ materiales.png); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -72,4 +139,4 @@ nav a:hover {
     border-radius: 20px;
     padding: 20px;
     border: 1px solid #ccc;
-  }
+  } */
