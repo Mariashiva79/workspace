@@ -1,0 +1,3 @@
+Usar script arriba con defer
+evenListener para click
+poner la librería de postman en mi postman (está en el moodle)
