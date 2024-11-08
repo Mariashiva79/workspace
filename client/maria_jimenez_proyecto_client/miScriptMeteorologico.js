@@ -46,7 +46,7 @@ function responseManager(resp) {
   console.log(resp);
   cambiaIcono(resp.weather[0].icon);
   muestraDesc(resp.weather[0].description);
-  muestraTemperatura(resp.main.temp);
+  muestraTemperatura(Math.round(resp.main.temp - 273.15));
   muestraHumedad(resp.main.humidity);
 // en este if else, le digo que si no encuentra la ciudad, muestre el país,
 // y si no hay país muestre la palabra "globe".

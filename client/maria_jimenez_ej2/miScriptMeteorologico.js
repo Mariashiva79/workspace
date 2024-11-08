@@ -38,7 +38,7 @@ function responseManager(resp) {
     console.log(resp);
     cambiaIcono(resp.weather[0].icon);
     muestraDesc(resp.weather[0].description);
-    muestraTemperatura(resp.main.temp);
+    muestraTemperatura(Math.round(resp.main.temp - 273.15));
     muestraHumedad(resp.main.humidity);
 }
 
