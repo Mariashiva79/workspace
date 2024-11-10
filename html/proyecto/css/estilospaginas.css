@@ -7,27 +7,20 @@
     font-family: "MsMadi";
     src: url("../font/MsMadi-Regular.ttf");
   }
+
   .background {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../images/motivodorado.png); /* Reemplaza con la URL de tu imagen */
+    background-image: url(../images/motivodorado.png);
     background-size: cover;
     background-position: center;
+    filter: opacity(0.2);
     z-index: -1;
   }
-  
-  .background::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 245, 219, 0.951); /* Cambia el color y la opacidad aquí */
-}
+
  body {
   background-color: rgb(250, 248, 243);
 }
@@ -50,6 +43,7 @@ section {
 }
 
 .header-image {
+  margin-top: 20px;
   max-width: 100%;
   height: auto;
   width: 20%;

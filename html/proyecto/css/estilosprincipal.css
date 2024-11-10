@@ -21,8 +21,8 @@ header {
   width: 100%;
   height: 700px;
   /* degradado cogido de https://uigradients.com/#Margo */
-  background: -webkit-linear-gradient(to right, hsla(42, 42%, 67%, 0.434), hwb(0 100% 0% / 0.639)), url(../images/charming-3d-render-amigurumi-doll_1089479-17135.png); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, hsla(42, 42%, 67%, 0.434), hwb(0 100% 0% / 0.639)), url(../images/charming-3d-render-amigurumi-doll_1089479-17135.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, hsla(42, 42%, 67%, 0.434), hwb(0 100% 0% / 0.639)), url(../imagescrochet/charming-3d-render-amigurumi-doll_1089479-17135.png); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, hsla(42, 42%, 67%, 0.434), hwb(0 100% 0% / 0.639)), url(../imagescrochet/charming-3d-render-amigurumi-doll_1089479-17135.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

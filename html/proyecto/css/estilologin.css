@@ -21,21 +21,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../images/motivodorado.png); /* Reemplaza con la URL de tu imagen */
+    background-image: url(../imagescrochet/motivodorado.png);
     background-size: cover;
     background-position: center;
+    filter: opacity(0.2);
     z-index: -1;
   }
-  
-  .background::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 245, 219, 0.855); /* Cambia el color y la opacidad aquí */
-}
 .recuperar-container {
     width: 100%;
     max-width: 600px;
