@@ -6,58 +6,67 @@
     <title>Amigurumis</title>
     <link rel="stylesheet" href="./css/estilospaginas.css">
     <link rel="icon" href="./favicon/oveja.png" type="image/png">
+    <script defer src="./js/index.js"></script>
 </head>
 <body>
+    <div class="background"></div> <!-- Fondo con opacidad -->
 <header class="header">
             <nav class="nav">
-                <a href="index.html">Volver</a>
+                <a href="index.html">Inicio</a>
+                    <a href="Login.html">Login</a>
+                    <a href="materiales.html">Materiales</a>
+                    <a href="hogar.html">Hogar</a>
+                    <a href="contacto.html">Contacto</a>
             </nav>
             <img class="header-image" src="./imagescrochet/portadaamigurumi.png" alt="">
  </header>
-    <section id="parte1">
+    <section>
         <h1>Amigurumis</h1>
     <div class="contenedor">
         <div class="contenedor-portfolio">
-            <div class="foto" style="background-image: url(./imagescrochet/10_elefantecocinando.JPG);">
-            </div>
-                <div class="foto" style="background-image: url(./imagescrochet/14_ratonfondoblanco.PNG);">
-            </div>
-                <div class="foto" style="background-image: url(./imagescrochet/zorroblanco.PNG)">
-            </div>
-                <div class="foto" style="background-image: url(./imagescrochet/16_zorrovariascolas.PNG);">
-            </div>
-                <div class="foto" style="background-image: url(./imagescrochet/dollpelonaranja.png);">
-            </div>
-                <div class="foto" style="background-image: url(./imagescrochet/11_ardilla.JPG);">
+            <div class="foto" style="background-image: url(./imagescrochet/perros.png);" data-image="./imagescrochet/perros.png"></div>
+             <!-- https://www.etsy.com/es/listing/1668372416/pieuvre-au-crochet-pour-bebe-amigurumi patrón de la página etsy     -->
+            <div class="foto" style="background-image: url(./imagescrochet/pulpos.jpg);" data-image="./imagescrochet/pulpos.jpg"></div>
+            <!-- patrón de la página etsy -->
+                <div class="foto" style="background-image: url(./imagescrochet/zorroblanco.PNG)" data-image="./imagescrochet/zorroblanco.PNG"></div>
+                <div class="foto" style="background-image: url(./imagescrochet/chicapelorizado.jpg);" data-image="./imagescrochet/chicapelorizado.jpg"></div>
+                <div class="foto" style="background-image: url(./imagescrochet/amigascrochet.png);" data-image="./imagescrochet/amigascrochet.png">
+</div>
+                <div class="foto" style="background-image: url(./imagescrochet/11_ardilla.JPG);" data-image="./imagescrochet/11_ardilla.JPG">
             </div>
     </div>
-        
+    <div class="modal" id="imageModal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+      </div>
         <div class="contenedor-texto">
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente pariatur fugiat sequi itaque saepe voluptatibus nostrum, exercitationem aliquam et cupiditate unde iusto iste, error, quos voluptates ipsum ex ducimus autem!</p>
+                <p>Los amigurumis son figuras de crochet o tejido que representan personajes, animales o elementos de la vida cotidiana. Existen diferentes tipos, cada uno con su propio estilo y características. Los amigurumis clásicos suelen ser animales tiernos y pequeños, como osos, gatos y conejos, mientras que los amigurumis Kawaii destacan por tener características exageradas, como ojos grandes y expresiones adorables.</p>
             </div>
     </div>
 </section>
-<section id="parte2">
+
+<section>
     <h1>Personajes y accesorios</h1>
     <div class="contenedor2">
         <div class="contenedor-texto">
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente pariatur fugiat sequi itaque saepe voluptatibus nostrum, exercitationem aliquam et cupiditate unde iusto iste, error, quos voluptates ipsum ex ducimus autem!</p>
+                <p>También están los amigurumis de personajes de películas, videojuegos o series, que recrean personajes populares en un estilo encantador. Finalmente, encontramos los amigurumis decorativos, que representan alimentos, plantas, o elementos del hogar y son perfectos como adornos.</p>
             </div>
         </div>
         <div class="contenedor-portfolio">
-            <div class="foto" style="background-image: url(./imagescrochet/10_elefantecocinando.JPG);">
+            <!-- fotos sacadas de la página etsy, de freepik y de pinterest -->
+            <div class="foto" style="background-image: url(./imagescrochet/onepiecetodos.png);" data-image="./imagescrochet/onepiecetodos.png">
         </div>
-            <div class="foto" style="background-image: url(./imagescrochet/14_ratonfondoblanco.PNG);">
+            <div class="foto" style="background-image: url(./imagescrochet/nemo.PNG);" data-image="./imagescrochet/nemo.PNG">
         </div>
-            <div class="foto" style="background-image: url(./imagescrochet/zorroblanco.PNG)">
+            <div class="foto" style="background-image: url(./imagescrochet/mujerescientificas.jpg)" data-image="./imagescrochet/mujerescientificas.jpg">
         </div>
-            <div class="foto" style="background-image: url(./imagescrochet/16_zorrovariascolas.PNG);">
+            <div class="foto" style="background-image: url(./imagescrochet/marcapaginasflor.png);" data-image="./imagescrochet/marcapaginasflor.png">
         </div>
-            <div class="foto" style="background-image: url(./imagescrochet/dollpelonaranja.png);">
+            <div class="foto" style="background-image: url(./imagescrochet/llaverodragon.jpg);" data-image="./imagescrochet/llaverodragon.jpg">
         </div>
-            <div class="foto" style="background-image: url(./imagescrochet/11_ardilla.JPG);">
+            <div class="foto" style="background-image: url(./imagescrochet/jugueteabejas.png);" data-image="./imagescrochet/jugueteabejas.png">
         </div>
     </div>
     </div>
@@ -65,17 +74,19 @@
 <footer class="footer">
     <div class="footer-section">
       <h4>Teléfono</h4>
-      <p><a href="#">+34 234567890</a></p>
+      <p><a href="tel:+1234567890">+1 234 567 890</a></p>
     </div>
     <div class="footer-section">
-      <h4>Mail</h4>
-      <p><span>tejiendosuenos@info.com</span></p>
+      <h4>Email</h4>
+      <p>
+        <a href="mailto:tejiendosuenos@info.com">tejiendosuenos@info.com</a>
+      </p>
     </div>
     <div class="footer-section social-icons">
       <h4>Síguenos</h4>
-      <span onclick="window.open('https://twitter.com/', '_blank')"><img src="./favicon/twittercircular.png" alt="Twitter"></span>
-      <span onclick="window.open('https://instagram.com/', '_blank')"><img src="./favicon/instagramcircular.png" alt="Instagram"></span>
-      <span onclick="window.open('https://twitter.com/', '_blank')"><img src="./favicon/facebook.png" alt="Facebook"></span>
+      <span><img src="./favicon/twittercircular.png" alt="Twitter"></span>
+      <span><img src="./favicon/instagramcircular.png" alt="Instagram"></span>
+      <span><img src="./favicon/facebook.png" alt="Facebook"></span>
     </div>
   </footer>
    

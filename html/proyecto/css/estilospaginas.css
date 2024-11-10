@@ -7,17 +7,38 @@
     font-family: "MsMadi";
     src: url("../font/MsMadi-Regular.ttf");
   }
-
-body {
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/motivodorado.png); /* Reemplaza con la URL de tu imagen */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+  
+  .background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 245, 219, 0.951); /* Cambia el color y la opacidad aquí */
+}
+ body {
   background-color: rgb(250, 248, 243);
 }
-#parte1 {
-  background-color: #f9edc8;
+section {
   padding: 40px;
+  margin-bottom: 40px;
   text-align: center;
   font-size: 20px;
   color: #a3702d;
-}
+} 
+
 
 .header {
   width: 100%;
@@ -33,22 +54,18 @@ body {
   height: auto;
   width: 20%;
 }
-  .nav {
+.nav {
     position: absolute;
     top: 20px;
     right: 30px;
     padding: 30px 50px 0 0;
   }
   
-  .nav a:hover {
-    color: #ddd;
-  }
 nav a {
     color: #a3702d;
     text-decoration: none;
     font-family: "MsMadi";
-    font-size: 30px;
-    margin: 0 10px;
+    font-size: 20px;
     padding: 10px 15px;
     border-radius: 5px;
     background-image: none;
@@ -62,7 +79,7 @@ nav a:hover {
   
   h1 {
     font-family: "MsMadi";
-    font-size: 100px;
+    font-size: 60px;
     font-weight: 300;
     color: #a3702d;
     text-align: center;
@@ -94,31 +111,6 @@ nav a:hover {
   grid-template-columns: 1fr 3fr;
   gap: 20px;
 }
-.contenedor-portfolio {
-  /* Grid */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
- /* flexbox */
-  /* width: 70%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; */
-}
-
-.foto {
-  border-radius: 10px;
-  min-height: 200px;
-  padding: 20px;
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  /* flexbox
-  width: calc(33.33% - 20px); */
-}
-
 
 .contenedor-texto {
   font-family: "MsMadi", sans-serif;
@@ -156,7 +148,7 @@ nav a:hover {
 }
 
 .footer-section p,
-.footer-section span {
+.footer-section a, .footer-section span {
   color:#a3702d;
   font-size: 1em;
   text-decoration: none;
@@ -178,4 +170,59 @@ nav a:hover {
 
 .social-icons span:hover img {
   transform: scale(1.2);
+}
+
+
+/* Estilos para la galería */
+.contenedor-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.foto {
+  border-radius: 10px;
+  min-height: 200px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: calc(33.33% - 20px);
+  cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+}
+
+/* Estilos para el modal */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 8px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 2em;
+  cursor: pointer;
+}
+.separador {
+  width: 100%;
+  height: 1px;
+  filter: opacity(0.2)
 }

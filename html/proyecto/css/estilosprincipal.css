@@ -170,7 +170,7 @@ section h2 {
 }
 
 .footer-section p,
-.footer-section span {
+.footer-section a, .footer-section span {
   color:#a3702d;
   font-size: 1em;
   text-decoration: none;
