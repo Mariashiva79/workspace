@@ -3,6 +3,9 @@
  margin: 0;
  box-sizing: border-box; 
 }
+body, html {
+  height: 100%;
+}
 
 .center{ text-align: center; margin-top: 30%;  }
 .white{ color: white; }
@@ -156,6 +159,7 @@ header .textos-cabecera {
 
 .contenedor-menus {
   font-family: "MsMadi", sans-serif;
+  min-height: calc(100vh - 200px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -264,5 +268,3 @@ section h2 {
 .social-icons span:hover img {
   transform: scale(1.2);
 }
-
-
