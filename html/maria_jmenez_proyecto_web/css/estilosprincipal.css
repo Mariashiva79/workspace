@@ -1,0 +1,268 @@
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box; 
+}
+
+.center{ text-align: center; margin-top: 30%;  }
+.white{ color: white; }
+.escena {
+  position: absolute;
+	width: 100%;
+  position: absolute;
+  top: 0px;
+	left: 0px;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.burbuja {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+  z-index: -1;
+
+}
+
+.burbuja svg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#burbuja-bottom-layer {
+	will-change: transform;
+	transform: translateY(768px);
+	animation: fall 12.5s infinite linear;
+}
+
+#burbuja-top-layer {
+	will-change: transform;
+	transform: translateY(768px);
+	animation: fall 18s infinite linear;
+}
+
+#burbuja-bottom-layer-bottom {
+	will-change: transform;
+	transform: translate(1068px, -1368px);
+	animation: fall-bottom 12.5s infinite linear;
+}
+
+#burbuja-top-layer-bottom {
+	will-change: transform;
+	transform: translate(1168px, -1268px);
+	animation: fall-bottom 18s infinite linear;
+
+}
+@keyframes fall {
+	
+	100% {
+		transform: translateY(0);
+	}
+	
+}
+@keyframes fall-bottom {
+	
+	100% {
+		transform: translateY(0);
+	}
+	
+}
+@font-face {
+    font-family: "MsMadi";
+    src: url("../font/MsMadi-Regular.ttf");
+  }
+
+.contenedor {
+  padding: 50px 0;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* Header */
+header {
+  width: 100%;
+  height: 700px;
+  /* degradado cogido de https://uigradients.com/#Margo */
+  background: -webkit-linear-gradient(to right, hsla(42, 42%, 67%, 0.434), hwb(0 100% 0% / 0.639)), url(../img/charming-3d-render-amigurumi-doll_1089479-17135.png); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, hsla(42, 42%, 67%, 0.434), hwb(0 100% 0% / 0.639)), url(../img/charming-3d-render-amigurumi-doll_1089479-17135.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+nav {
+  text-align: right;
+  padding: 30px 50px 0 0;
+}
+nav a {
+  color: #a3702d;
+  text-decoration: none;
+  font-family: "MsMadi";
+  font-size: 20px;
+  margin: 0 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-image: none;
+  transition: all 0.3s;
+} 
+nav a:hover {
+  background-color: #a3702d;
+  color: #FFEFBA;
+}
+
+header .textos-cabecera {
+  display: flex;
+  height: 430px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+.textos-cabecera h1 {
+  font-family: "MsMadi";
+  font-size: 150px;
+  font-weight: 300;
+  color: #a3702d;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-shadow: 0 0 10px #f9edc8;   
+}
+
+.textos-cabecera h2 {
+  font-size: 50px;
+  font-family: "MsMadi";
+  font-weight: 300;
+  color: #a3702d;
+  text-shadow: #a3702d;
+}
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+} 
+/* Fin Header */
+
+.contenedor-menus {
+  font-family: "MsMadi", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(250, 248, 243);
+}
+
+.contenedor-menus {
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  position: relative;
+  width: 500px;
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: white;
+}
+
+.box:nth-child(1) {
+  background-image: url(../img/ovilloblanco.jpg);
+}
+
+.box:nth-child(2) {
+  background-image: url(../img/26_pajaroasomandose.PNG);
+}
+
+.box:nth-child(3) {
+  background-image: url(../img/mantaconcorazon.jpg);
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contenido {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 50px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.6em;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.box:hover .contenido {
+  opacity: 1;
+}
+
+p {
+  font-size: 1em;
+}
+section h2 {
+ font-size: 1.5em;
+ margin-bottom: 5px;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsla(42, 42%, 67%, 0.434);
+  color: #a3702d;
+  padding: 20px;
+}
+
+.footer-section {
+  text-align: center;
+}
+
+.footer-section h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a, .footer-section span {
+  color:#a3702d;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.footer-section span:hover {
+  text-decoration: underline;
+}
+
+.social-icons span {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons span:hover img {
+  transform: scale(1.2);
+}
+
+
