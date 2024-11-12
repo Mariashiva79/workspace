@@ -92,6 +92,7 @@ body, html {
 }
 /* Header */
 header {
+  /* código sacado del tutorial de https://www.youtube.com/watch?v=HH_SMpxV7qQ para crear un efecto ola */
   width: 100%;
   height: 700px;
   /* degradado cogido de https://uigradients.com/#Margo */

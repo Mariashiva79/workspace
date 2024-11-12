@@ -3,9 +3,11 @@
   margin: 0;
   box-sizing: border-box; 
  }
+ /* enfocado a hacer la página responsive, pero no al final no he conseguido */
  body, html {
-  height: 100%;
+  height: 100%; 
  }
+ /* fuente de letra descargada de google fonts */
 @font-face {
     font-family: "MsMadi";
     src: url("../font/MsMadi-Regular.ttf");
@@ -87,7 +89,7 @@ nav a:hover {
   max-width: 1200px;
   margin: auto;
   padding: 40px 0;
-  /* flexbox */
+  /* flexbox, en este caso voy a usar grid*/
   /* display: flex;
   gap: 20px; */
   /* Grid */
@@ -119,7 +121,7 @@ nav a:hover {
   border: 1px solid #ccc;
   padding: 20px;
   align-items: center;
-  /* Grib */
+  /* Grib, en este caso uso flexbox */
   /* display: grid;
   grid-template-rows: auto auto; */
   /* flexbox */
